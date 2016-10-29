@@ -48,7 +48,7 @@ void CandleLightFlicker(int wait, int percentOn)
                                IntensityConverter((float)CandleLightColor.Green, percentOn),
                                IntensityConverter((float)CandleLightColor.Blue, percentOn));
 
-  //set every pixel with the new intensicy
+  //set every pixel with the new intensity
   for (int i = 0; i < strip.numPixels(); i++)
   {
      strip.setPixelColor(DisplayLookup[i], color);
